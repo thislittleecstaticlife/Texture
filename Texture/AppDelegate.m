@@ -129,7 +129,7 @@
 
     // • Create the window
     //
-    window = [[MediaWindow alloc] initWithContentRect:NSMakeRect(0, 0, 540, 540)
+    window = [[MediaWindow alloc] initWithContentRect:NSMakeRect(0, 0, 960, 540)
                                             styleMask:(  NSWindowStyleMaskTitled
                                                        | NSWindowStyleMaskClosable
                                                        | NSWindowStyleMaskResizable
@@ -139,6 +139,10 @@
     if (nil == window) {
         [NSException raise:NSGenericException format:@"Failed to create window"];
     }
+
+    // TODO: Center the content view on full screen and remove this
+    //
+    [window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenNone];
 
     // • Go ahead and set the title, but hide it
     //

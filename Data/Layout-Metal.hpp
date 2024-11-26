@@ -1,5 +1,5 @@
 //
-//  Layout-Host.hpp
+//  Layout-Metal.hpp
 //
 //  Copyright © 2024 Robert Guequierre
 //
